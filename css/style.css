@@ -42,18 +42,32 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-bottom: 94px;
+}
+
 /* Стили для обнуления верхних отступов у элементов */
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
-p,
-ul {
+p {
   margin-top: 0;
+  margin-left: 0;
 }
 
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
 /* список + ссылка */
 .list {
   list-style: none;
@@ -65,13 +79,25 @@ ul {
 }
 
 /* nav */
-.nav-main {
+.main-nav {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
+.main-nav-flex {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+  height: 80px;
+}
+
+.main-nav-link:not(:last-child) {
+  margin-right: 50px;
+}
+
 .logo {
+  margin-right: 93px;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
@@ -83,6 +109,10 @@ ul {
 .main-nav:hover,
 .main-nav-on {
   color: var(--third-text-color);
+}
+
+.contacts-top {
+  margin-left: auto;
 }
 
 .secondary-font {
@@ -97,10 +127,35 @@ ul {
 }
 
 /* герой + логотип + подвал */
-.hero,
+.hero {
+  background-color: var(--hero-footer-bg-color);
+  color: var(--main-white-color);
+  width: 1600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 200px 452px;
+}
+
+.hero-title {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.basement-footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--hero-footer-bg-color);
+  color: var(--main-white-color);
+}
+
 .logo-white,
-.basement-footer,
 .location-address {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
   background-color: var(--hero-footer-bg-color);
   color: var(--main-white-color);
 }
@@ -115,6 +170,8 @@ ul {
 
 /* buttons */
 .button-one {
+  width: 200px;
+  height: 50px;
   font-family: Roboto, sans-serif;
   cursor: pointer;
   font-weight: 700;
@@ -148,26 +205,57 @@ ul {
 }
 
 /* достоинства веб студии */
+
+.dignity {
+  display: flex;
+}
+
 .dignity-title {
+  margin-bottom: 10px;
   line-height: 1.14;
 }
 
 .dignity-paragrahs {
+  margin-bottom: 0;
   color: var(--second-text-color);
   line-height: 1.7;
 }
 
+.dignity-items:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* чем мы занимаемся */
+.what-we-do-section {
+  padding-top: 0%;
+}
+
 .what-we-do-title,
 .our-team-title {
+  margin-bottom: 50px;
   font-weight: 500;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
 }
 
+.what-we-do-list {
+  display: flex;
+}
+
+.what-we-do-items:not(:last-child) {
+  margin-right: 30px;
+}
+
+.what-we-do-picture {
+  display: block;
+}
+
 /* наша команда */
 .our-team {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
   background-color: var(--section-bg-color);
 }
 
@@ -181,6 +269,14 @@ ul {
   color: var(--second-text-color);
   font-size: 16px;
   line-height: 1.2;
+}
+
+.our-team-list {
+  display: flex;
+}
+
+.our-team-items:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* протфолио */
@@ -197,3 +293,13 @@ ul {
   font-size: 16px;
   line-height: 1.9;
 }
+
+/* отладка мардженов */
+
+/* a {
+  outline: 1px solid tomato;
+}
+
+ul {
+  outline: 1px solid green;
+} */

@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-        crossorigin="anonymous" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
@@ -17,107 +15,123 @@
 </head>
 
 <body>
-    <!-- верхний бар -->
-    <header>
-        <!--главная навигация-->
-        <nav>
-            <a class="secondary-font logo" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
-            <ul class="list">
-                <li><a class="main-nav main-nav-on link" href="./index.html">Студия</a></li>
-                <li><a class="main-nav link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="main-nav link" href="">Контакты</a></li>
-            </ul>
-        </nav>
-        <!-- контакты верхнего бара -->
-        <ul class="list">
-            <li><a class="main-nav link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="main-nav link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-    </header>
+        <!-- верхний бар -->
+        <header>
+            <div class="container main-nav-flex">
+            <!--главная навигация-->
+            <nav class="main-nav-flex">
+                <a class="secondary-font logo" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
+                <ul class="list main-nav-flex main-nav-link">
+                    <li class="main-nav-link"><a class="main-nav main-nav-on link" href="./index.html">Студия</a></li>
+                    <li class="main-nav-link"><a class="main-nav link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="main-nav-link"><a class="main-nav link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <!-- контакты верхнего бара -->
+                <ul class="list contacts-top main-nav-flex main-nav-link">
+                    <li class="main-nav-link"><a class="main-nav link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="main-nav-link"><a class="main-nav link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </div>
+        </header>
 
-    <main>
-        <div>
+        <main>
             <!-- герой -->
-            <section class="hero">
-                <h1><span class="hero-title">Эффективные решения для вашего бизнеса</span></h1>
-                <button class="button-one" type="button">Заказать услугу</button>
+            <section class="section">
+                <div  class="container hero">
+                    <h1><span class="hero-title">Эффективные решения для вашего бизнеса</span></h1>
+                    <button class="button-one" type="button">Заказать услугу</button>
+                </div>
             </section>
-        </div>
-
-        <section>
+            
+            <section class="section">
+            <div class="container">
             <!-- достоинства веб студии -->
             <!--заголовок спрятать-->
             <h2 class="visually-hidden">Достоинства веб студии</h2>
-            <ul class="list">
-                <li>
+            <ul class="list dignity">
+                <li class="dignity-items">
                     <h3 class="dignity-title">Внимание к деталям</h3>
-                    <p class="dignity-paragrahs">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    <p class="dignity-paragrahs">Идейные соображения, а также начало повседневной работы по формированию
+                        позиции.</p>
                 </li>
-                <li>
+                <li class="dignity-items">
                     <h3 class="dignity-title">Пунктуальность</h3>
-                    <p class="dignity-paragrahs">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    <p class="dignity-paragrahs">Задача организации, в особенности же рамки и место обучения кадров влечет за
+                        собой.</p>
                 </li>
-                <li>
+                <li class="dignity-items">
                     <h3 class="dignity-title">Планирование</h3>
-                    <p class="dignity-paragrahs">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    <p class="dignity-paragrahs">Равным образом консультация с широким активом в значительной степени
+                        обуславливает.</p>
                 </li>
-                <li>
+                <li class="dignity-items">
                     <h3 class="dignity-title">Современные технологии</h3>
-                    <p class="dignity-paragrahs">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    <p class="dignity-paragrahs">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                    </p>
                 </li>
             </ul>
+            </div>
         </section>
-
+        
         <!-- чем мы занимаемся -->
-        <section>
+        <section class="section what-we-do-section">
+            <div class="container">
             <h2 class="what-we-do-title">Чем мы занимаемся</h2>
-            <ul class="list">
-                <li><img src="./images/box0.jpg" alt="Набор програмного кода" width="370"></li>
-                <li><img src="./images/box1.jpg" alt="Розработка ПО для смартфонов" width="370"></li>
-                <li><img src="./images/box2.jpg" alt="3D моделирование" width="370"></li>
+            <ul class="list what-we-do-list">
+                <li class="what-we-do-items"><img class="what-we-do-picture" src="./images/box0.jpg" alt="Набор програмного кода" width="370"></li>
+                <li class="what-we-do-items"><img class="what-we-do-picture" src="./images/box1.jpg" alt="Розработка ПО для смартфонов" width="370"></li>
+                <li class="what-we-do-items"><img class="what-we-do-picture" src="./images/box2.jpg" alt="3D моделирование" width="370"></li>
             </ul>
+            </div>
         </section>
-
+        
         <!-- наша команда -->
-        <section class="our-team">
+        <section class="section our-team">
+            <div class="container">
             <h2 class="our-team-title">Наша команда</h2>
-            <ul class="list">
-                <li>
+            <ul class="list our-team-list">
+                <li class="our-team-items">
                     <img src="./images/img(0).jpg" alt="Брюнет в бордовой рубашке" width="270">
                     <h3 class="our-person">Игорь Демьяненко</h3>
                     <p class="our-profession">Product Designer</p>
                 </li>
-                <li>
+                <li class="our-team-items">
                     <img src="./images/img(1).jpg" alt="Блондинка в черном пиджаке" width="270">
                     <h3 class="our-person">Ольга Репина</h3>
                     <p class="our-profession">Frontend Developer</p>
                 </li>
-                <li>
+                <li class="our-team-items">
                     <img src="./images/img(2).jpg" alt="Брюнет в синей рубашке" width="270">
                     <h3 class="our-person">Николай Тарасов</h3>
                     <p class="our-profession">Marketing</p>
                 </li>
-                <li>
+                <li class="our-team-items">
                     <img src="./images/img(3).jpg" alt="Брюнет в черной футболке" width="270">
                     <h3 class="our-person">Михаил Ермаков</h3>
                     <p class="our-profession">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
-    </main>
-
-    <!-- подвал -->
-    <footer class="basement-footer">
-        <a class="secondary-font logo logo-white" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
-        <address>
-            <ul class="list">
-                <li><span class=" link footer-contacts location-address">г. Киев, пр-т Леси Украинки, 26</span></li>
-                <li><a class="link main-nav footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li><a class="link main-nav footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
-    </footer>
+    </div>
+        </main>
+        
+        <!-- подвал -->
+        <footer class="basement-footer">
+            <div class="container">
+                <a class="secondary-font logo logo-white" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
+                <address>
+                    <ul class="list">
+                        <li><span class="link footer-contacts location-address">г. Киев, пр-т Леси Украинки, 26</span></li>
+                        <li><a class="link main-nav footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li><a class="link main-nav footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+        </footer>
+    
 
 
 </body>
