@@ -16,19 +16,19 @@
 
 <body>
         <!-- верхний бар -->
-        <header>
-            <div class="container main-nav-flex">
+        <header class="main-nav-border">
             <!--главная навигация-->
-            <nav class="main-nav-flex">
-                <a class="secondary-font logo" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
-                <ul class="list main-nav-flex main-nav-link">
-                    <li class="main-nav-link"><a class="main-nav main-nav-on link" href="./index.html">Студия</a></li>
-                    <li class="main-nav-link"><a class="main-nav link" href="./portfolio.html">Портфолио</a></li>
-                    <li class="main-nav-link"><a class="main-nav link" href="">Контакты</a></li>
-                </ul>
-            </nav>
+            <div class="container main-nav-flex">
+                <nav class="main-nav-flex main-nav-paddings">
+                    <a class="secondary-font logo logo-top" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
+                    <ul class="list main-nav-flex">
+                        <li class="main-nav-link"><a class="main-nav main-nav-on link" href="./index.html">Студия</a></li>
+                        <li class="main-nav-link"><a class="main-nav link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="main-nav-link"><a class="main-nav link" href="">Контакты</a></li>
+                    </ul>
+                </nav>
             <!-- контакты верхнего бара -->
-                <ul class="list contacts-top main-nav-flex main-nav-link">
+                <ul class="list contacts-top main-nav-flex">
                     <li class="main-nav-link"><a class="main-nav link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li class="main-nav-link"><a class="main-nav link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
@@ -37,10 +37,10 @@
 
         <main>
             <!-- герой -->
-            <section class="section">
-                <div  class="container hero">
-                    <h1><span class="hero-title">Эффективные решения для вашего бизнеса</span></h1>
-                    <button class="button-one" type="button">Заказать услугу</button>
+            <section class="hero">
+                <div class="container">
+                    <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                    <button class="button-one" type="button">Заказать услугу</button>                    
                 </div>
             </section>
             
@@ -92,36 +92,36 @@
             <h2 class="our-team-title">Наша команда</h2>
             <ul class="list our-team-list">
                 <li class="our-team-items">
-                    <img src="./images/img(0).jpg" alt="Брюнет в бордовой рубашке" width="270">
+                    <img class="our-team-picture" src="./images/img(0).jpg" alt="Брюнет в бордовой рубашке" width="270">
                     <h3 class="our-person">Игорь Демьяненко</h3>
                     <p class="our-profession">Product Designer</p>
                 </li>
                 <li class="our-team-items">
-                    <img src="./images/img(1).jpg" alt="Блондинка в черном пиджаке" width="270">
+                    <img class="our-team-picture" src="./images/img(1).jpg" alt="Блондинка в черном пиджаке" width="270">
                     <h3 class="our-person">Ольга Репина</h3>
                     <p class="our-profession">Frontend Developer</p>
                 </li>
                 <li class="our-team-items">
-                    <img src="./images/img(2).jpg" alt="Брюнет в синей рубашке" width="270">
+                    <img class="our-team-picture" src="./images/img(2).jpg" alt="Брюнет в синей рубашке" width="270">
                     <h3 class="our-person">Николай Тарасов</h3>
                     <p class="our-profession">Marketing</p>
                 </li>
                 <li class="our-team-items">
-                    <img src="./images/img(3).jpg" alt="Брюнет в черной футболке" width="270">
+                    <img class="our-team-picture" src="./images/img(3).jpg" alt="Брюнет в черной футболке" width="270">
                     <h3 class="our-person">Михаил Ермаков</h3>
                     <p class="our-profession">UI Designer</p>
                 </li>
             </ul>
             </div>
         </section>
-    </div>
+    
         </main>
         
         <!-- подвал -->
         <footer class="basement-footer">
             <div class="container">
                 <a class="secondary-font logo logo-white" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
-                <address>
+                <address class="address-footer">
                     <ul class="list">
                         <li><span class="link footer-contacts location-address">г. Киев, пр-т Леси Украинки, 26</span></li>
                         <li><a class="link main-nav footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -131,9 +131,6 @@
                 </address>
             </div>
         </footer>
-    
-
-
 </body>
 
 </html>
