@@ -233,7 +233,7 @@ ul {
   line-height: 1.6;
   border-radius: 4px;
   background-color: var(--section-bg-color);
-  color: var(--third-text-color);
+  color: var(--main-text-color);
 }
 
 .button-two:hover,
