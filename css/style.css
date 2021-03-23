@@ -84,6 +84,8 @@ ul {
 
 /* nav */
 .main-nav {
+  display: inline-block;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -94,17 +96,18 @@ ul {
   align-items: center;
 }
 
+.main-nav-up {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .main-nav-link:not(:last-child) {
   margin-right: 50px;
 }
 
 .main-nav-border {
   border-bottom: 1px solid #ececec;
-}
-
-.main-nav-paddings {
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .logo {
@@ -115,7 +118,13 @@ ul {
 }
 
 .logo-top {
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-right: 93px;
+}
+
+.basement-footer .logo-white {
+  color: var(--main-white-color);
 }
 
 .logo-blue,
@@ -168,13 +177,14 @@ ul {
   margin-top: 20px;
 }
 
-.logo-white {
-  color: var(--main-white-color);
-}
-
 .location-address {
   background-color: var(--hero-footer-bg-color);
   color: var(--main-white-color);
+}
+
+.address-footer-mailto {
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .hero-title {
@@ -298,12 +308,15 @@ ul {
 }
 
 .our-person {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
 }
 
 .our-profession {
+  margin-bottom: 0;
   color: var(--second-text-color);
   font-size: 16px;
   line-height: 1.2;
@@ -314,6 +327,14 @@ ul {
   flex-wrap: wrap;
 }
 
+.our-team-name-profession {
+  text-align: center;
+  background-color: var(--main-white-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+}
+
 .our-team-items:not(:last-child) {
   margin-right: 30px;
 }
@@ -321,6 +342,7 @@ ul {
 /* протфолио */
 /* проекты */
 .projects-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -328,9 +350,22 @@ ul {
 }
 
 .projects-profession {
+  margin-bottom: 0;
   color: var(--second-text-color);
   font-size: 16px;
   line-height: 1.9;
+}
+
+.collection-link {
+  border-radius: 0px 0px 4px 4px;
+}
+.collection-title-profession {
+  border: 1px solid #eeeeee;
+  background-color: var(--main-white-color);
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 .collection-list {
@@ -343,7 +378,7 @@ ul {
   margin-bottom: 30px;
 }
 
-.collection-items:nth-child(2n + 3) {
+.collection-items:nth-child(3n + 3) {
   margin-right: 0;
 }
 
@@ -359,4 +394,24 @@ ul {
 
 ul {
   outline: 1px solid green;
+} */
+
+/* li {
+  background-color: red;
+}
+
+ul {
+  background-color: rgb(240, 206, 143);
+}
+
+nav {
+  background-color: greenyellow;
+}
+
+div {
+  background-color: blue;
+}
+
+header {
+  background-color: gray;
 } */
